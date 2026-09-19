@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body {
+    width: 280px; margin: 0; padding: 16px;
+    background: #1f2123; color: #fff;
+    font-family: system-ui, -apple-system, sans-serif; font-size: 14px;
+  }
+  h1 { font-size: 16px; margin: 0 0 4px; }
+  .sub { color: #8c8e90; font-size: 12px; margin-bottom: 14px; }
+  .row { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #393B3D; }
+  .row:last-child { border-bottom: none; }
+  .label { color: #b8babd; }
+  .val { color: #00b06f; font-weight: 600; }
+  .btn {
+    display: block; width: 100%; margin-top: 12px; padding: 10px;
+    background: #ff3c8c; color: #fff; border: none; border-radius: 6px;
+    font-weight: 600; cursor: pointer; font-family: inherit;
+  }
+  .btn:hover { background: #e03078; }
+</style>
+</head>
+<body>
+  <h1>Nitro Sniper Pro</h1>
+  <div class="sub">Auto-claim Nitro gifts in real time</div>
+  <div class="row"><span class="label">Status</span><span class="val" id="status">Active</span></div>
+  <div class="row"><span class="label">Servers watched</span><span class="val">All</span></div>
+  <div class="row"><span class="label">Latency</span><span class="val">12ms</span></div>
+  <div class="row"><span class="label">Gifts claimed</span><span class="val" id="claims">0</span></div>
+  <button class="btn" id="toggle">Pause sniper</button>
+  <script src="popup.js"></script>
+</body>
+</html>
